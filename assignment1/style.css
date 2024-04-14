@@ -14,9 +14,7 @@ h1,h2,h3,h4{font-weight: initial;}
 .sxbt h2{text-align: center;line-height: 48px;padding:15px 5px;}
 .gerenleft{float: left;margin-right: 20px;}
 .gerenright{float: left;margin-right: 20px;width: 200px;text-align: center;border: 1px solid#f1b88d;}
-.gerenright h3{line-height: 36px;padding: 10px 0;background: #f1b88d;color: #FFFFFF;}
-.gerenright p{line-height: 40px;border-bottom: 1px dotted#f1b88d;}
-.gerenright1{float: left; width: 496px;}
+
 .gerenright1 h3{line-height: 36px;padding: 10px 0;background: #f1b88d;color: #FFFFFF;text-align: center;}
 .gerenright1 p{line-height: 27px;text-indent: 2em;border: 1px solid#f1b88d;padding: 0 15px;}
 .gerenleft img{width: 200px;padding-top: 10px;height: 286px;}
