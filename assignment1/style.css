@@ -24,10 +24,9 @@ h1,h2,h3,h4{font-weight: initial;}
 .gerenright1 img{width: 938px;height: 500px;}
 /* week 2 */
 .Week2{background: #FFFFFF;line-height: 48px;padding:15px 5px;font-size: 24px;}
-.Week2 h3 {text-align: center;letter-spacing: 6px;}
-.Week2 ul{width: 800px;margin: auto;}
-.Week2 ul li{float: left;width: 246px;margin:20px 10px 10px 10px;}
-.Week2 ul li img{width: 246px;height: 246px;}
+.Week2 h3 {text-align: center;letter-spacing: px;}
+.Week2 li{line-height: 30px;text-indent: 2em;;padding:  20px;}
+.Week2 img{width: 600px;height: 280px;}
 /* week3 */
 .jiaxiang{background: #FFFFFF;box-sizing: border-box;padding:0 20px 20px 20px;}
 .jiaxiangleft{float: left;width: 400px;margin-right: 20px;}
