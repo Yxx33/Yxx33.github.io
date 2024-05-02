@@ -81,4 +81,17 @@ body {
 
   p{
     font-size: 2rem;
+    color:black
+  }
+
+  .purple-box{
+    background-color: purple;
+  }
+
+  .coral-box{
+    background-color: coral;
+  }
+
+  .lime-box{
+    background-color: limegreen;
   }
