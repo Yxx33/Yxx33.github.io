@@ -11,10 +11,10 @@ console.log(playPauseImg);
 
 function playPauseVideo(){
     if (myVideo.paused || myVideo.ended) {
-        playPauseImg.scr = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
         myVideo.play();
     } else {
-        playPauseImg.scr = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+        playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
         myVideo.pause();
     }
 }

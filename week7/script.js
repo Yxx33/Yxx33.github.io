@@ -29,6 +29,6 @@ console.log(popSound);
 
 popButton.addEventListener("click", popIt);
 
-function popIt() {
+function popIt(){
     popSound.play();
 }
