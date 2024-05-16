@@ -98,7 +98,7 @@ function goFullScreen(){
 //---------------------------------------------------------------------------------
 
 // following code allows us to control volume of the video
-const increaseVolumeButton = ("#increase-volume-button");
+const increaseVolumeButton = document.querySelector("#increase-volume-button");
 console.log(increaseVolumeButton);
 
 increaseVolumeButton.addEventListener("click", increaseVolume);
@@ -110,7 +110,7 @@ function increaseVolume(){
     }
 }
 
-const decreaseVolumeButton = ("#decrease-volume-button");
+const decreaseVolumeButton = document.querySelector("#decrease-volume-button");
 console.log(decreaseVolumeButton);
 
 decreaseVolumeButton.addEventListener("click", decreaseVolume);
