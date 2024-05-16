@@ -42,7 +42,6 @@ function toggleSound()
         myVideo.muted = true;
      }
 }
-
 //---------------------------------------------------------------------------------
 
 // the following code allows us to set a progres bar for video
@@ -54,10 +53,9 @@ console.log(progressBarFill);
 
 function updateProgressBar(){
     const progress =(myVideo.currentTime / myVideo.duration) * 100;
-    console.log(progress);
+    // console.log(progress);
     progressBarFill.style.width = progress + "%";
 }
-
 //---------------------------------------------------------------------------------
 
 // the following code allows us to nevigate through different timestamps
@@ -76,5 +74,57 @@ step2Button.addEventListener("click", gotoStep2);
 
 function gotoStep2(){
     myVideo.currentTime = 52.0
+}
+//---------------------------------------------------------------------------------
+
+// the following code allows us to make the video full screen 
+
+myVideo.addEventListener("dblclick", goFullScreen);
+
+const fullscreenButton = document.querySelector("#fullscreen-button")
+console.log(fullscreenButton);
+
+fullscreenButton.addEventListener("click", goFullScreen);
+
+function goFullScreen(){
+    
+    if(!document.fullscreenElement){
+        myVideo.requestFullscreen();
+    } else{
+        document,exitFullscreen();
+    }
+}
+
+//---------------------------------------------------------------------------------
+
+// following code allows us to control volume of the video
+const increaseVolumeButton = ("#increase-volume-button");
+console.log(increaseVolumeButton);
+
+increaseVolumeButton.addEventListener("click", increaseVolume);
+
+// volume ranges from 0 to 1 with increment of 0.1
+function increaseVolume(){
+    if(myVideo.volume < 0.9){
+        myVideo.volume += 0.1;
+    }
+}
+
+const decreaseVolumeButton = ("#decrease-volume-button");
+console.log(decreaseVolumeButton);
+
+decreaseVolumeButton.addEventListener("click", decreaseVolume);
+
+// volume ranges from 0 to 1 with increment of 0.1
+function decreaseVolume(){
+    if(myVideo.volume > 0.11){
+        myVideo.volume -= 0.1;
+    }
+}
+
+myVideo.addEventListener("volumechange", updateVolume);
+
+function updateVolume(){
+    console.log("current volume is", myVideo.volume);
 }
 //---------------------------------------------------------------------------------
