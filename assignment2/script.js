@@ -93,11 +93,3 @@ function replayVideo() {
   });
 
 //---------------------------------------------------------------------------------
-// following code allows us to control the Like button
-const btn = document.getElementById("#btn");
-btn.addEventListener('click',function(){
-    confetti({
-        particleCount: 150,
-        spread: 60
-    })
-})
