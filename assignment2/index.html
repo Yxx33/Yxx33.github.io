@@ -13,30 +13,37 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Media Player Website</h1>
+      <h1 class="scrolling-text">Media Player Website</h1>
     </header>
 
-    <!-- Navigation Section 导航-->
-    <nav>
+      <!-- Image Section -->
+      <section class="image-row">
+        <img src="南渡素材 (114).png" alt="Image 1" class="inline-image" />
+        <img src="南渡素材 (170).png" alt="Image 2" class="inline-image" />
+      </section>
+     <!-- heart beat section -->
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
       </ul>
-    </nav>
-
     <!-- Main Content Section -->
      <main class="container">
       <!-- Media Player Section -->
       <div class="media-player">
-        <video id="custom-video-player" controls>
-          <source
-            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+        <video id="my-video">
+          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
             type="video/mp4"/>
         </video>
         <div class="custom-controls">
+        <!-- button sections -->
           <button id="play-pause-btn" onclick="togglePlayPause()">
             <img
               id="play-pause-img"
@@ -45,15 +52,14 @@
               width="20"
               height="20"/>
           </button>
-          <!-- add the missing buttons or functionality here -->
           <button id="mute-unmute-button">
             <img
               id="mute-unmute-img"
               src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
               alt="Mute unmute Button"
               width="20"
-              height="20"/>
-          </button>
+              height="20"
+            />
           <button id="decrease-volume-button">
             <img
               id="decrease-volume-img"
@@ -73,10 +79,11 @@
           <div class="progress-bar">
             <span id="progress-bar-fill"></span>
           </div>
+          <button id="repeat-button" onclick="toggleRepeat()">
+            <img id="repeat-img" src="https://img.icons8.com/ios-glyphs/30/repeat.png" alt="Repeat Button" width="20" height="20" />
+          </button>
         </div>
     </div>
-
-      <!-- Additional Content Section -->
       <section>
         <h2>Additional Content</h2>
         <p>This is where you can showcase any other relevant content.</p>
