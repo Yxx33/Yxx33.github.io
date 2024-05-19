@@ -34,10 +34,10 @@ muteUnmuteButton.addEventListener("click", toggleSound);
 
 function toggleSound() {
   if (myVideo.muted) {
-    muteUnmuteButton.style.backgroundColor = "#d5cea3";
+    muteUnmuteButton.style.backgroundColor = "rgb(223, 199, 218) ";
     myVideo.muted = false;
   } else {
-    muteUnmuteButton.style.backgroundColor = "#78755f";
+    muteUnmuteButton.style.backgroundColor = "rgb(87, 58, 95)";
     myVideo.muted = true;
   }
 }
@@ -74,13 +74,30 @@ function updateVolume(){
 }
 
 //---------------------------------------------------------------------------------
-// Toggle repeat function
-function toggleRepeat() {
+// Replay video function
+function replayVideo() {
     const video = document.getElementById('my-video');
-    const repeatImg = document.getElementById('repeat-img');
+    video.currentTime = 0;
+    video.play();
+  }
   
-    video.loop = !video.loop;
-    repeatImg.src = video.loop
-      ? 'https://img.icons8.com/ios-glyphs/30/repeat-on.png' // URL for "repeat on" icon
-      : 'https://img.icons8.com/ios-glyphs/30/repeat.png'; // URL for "repeat off" icon
-}
+  // Initial setup
+  document.addEventListener('DOMContentLoaded', () => {
+    const video = document.getElementById('my-video');
+    const progressBarFill = document.getElementById('progress-bar-fill');
+  
+    video.addEventListener('timeupdate', () => {
+      const progress = (video.currentTime / video.duration) * 100;
+      progressBarFill.style.width = `${progress}%`;
+    });
+  });
+
+//---------------------------------------------------------------------------------
+// following code allows us to control the Like button
+const btn = document.getElementById("#btn");
+btn.addEventListener('click',function(){
+    confetti({
+        particleCount: 150,
+        spread: 60
+    })
+})

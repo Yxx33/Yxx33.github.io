@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     gap: 10px; /* Space between images */
-    margin: 20px 0; /* Adjust margin as needed */
+    margin: 20px 0; /* Adjust margin */
   }
   
   .inline-image {
@@ -38,7 +38,7 @@
     display: block;
   }
 
-  /* heart beet */
+  /* heart beet section*/
 ul{
     position: relative;
     display: flex;
@@ -88,7 +88,7 @@ li:nth-child(9){
     animation: love1 5s 1.6s infinite;
 }
 
-/* 下面定义动画 */
+/* Heartbeat definition animation */
 @keyframes love1 {
     30%,50%{
         height: 60px;
@@ -140,7 +140,7 @@ li:nth-child(9){
     }
 }
 
-/* 这里的代码给主题背景加了渐变颜色，给h1换了字体。 */
+/* The code here adds a gradient color to the theme background and adjusts the font and size of h1 */
 body {
   font-family: "Arial", sans-serif;
   background-image: linear-gradient(to bottom, #d3abe4, #000000);
@@ -153,7 +153,6 @@ body {
 }
 
 h1 {
-
     font-family: 'Great Vibes', cursive;
     text-shadow: 2px 2px 4px rgb(185, 171, 241);
 }
@@ -213,7 +212,7 @@ nav a {
 
 .custom-controls {
   position: relative;
-  z-index: 3; /* Ensures the controls are on top of the video */
+  z-index: 3; 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,6 +247,30 @@ nav a {
   width: 0;
   transition: width 0.3s ease;
 }
+
+.button {
+    background-color: #404663;
+    color: white;
+    border: 0;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0.5em 1.25em;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    gap: 0.5em;
+    box-shadow:
+    0px 1.7px 2.2px rgba(0, 0, 0, 0.2),
+    0px 4px 5.3px rgba(0, 0, 0, 0.028),
+    0px 7.5px 10px rgba(0, 0, 0, 0.035),
+    0px 13.4px 17.9px rgba(0, 0, 0, 0.042),
+    0px 25.1px 22.4px rgba(0, 0, 0, 0.05),
+    0px 60px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    align-items: center;
+}
+
+
 
 /* Footer styling */
 footer {
