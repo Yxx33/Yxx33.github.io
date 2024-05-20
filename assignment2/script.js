@@ -74,22 +74,37 @@ function updateVolume(){
 }
 
 //---------------------------------------------------------------------------------
-// Replay video function
+// The foloowing coding allows us to control replay the video
 function replayVideo() {
     const video = document.getElementById('my-video');
     video.currentTime = 0;
     video.play();
-  }
+}
   
-  // Initial setup
-  document.addEventListener('DOMContentLoaded', () => {
-    const video = document.getElementById('my-video');
-    const progressBarFill = document.getElementById('progress-bar-fill');
+// Initial setup
+document.addEventListener('DOMContentLoaded', () => {
+  const video = document.getElementById('my-video');
+  const progressBarFill = document.getElementById('progress-bar-fill');
   
-    video.addEventListener('timeupdate', () => {
-      const progress = (video.currentTime / video.duration) * 100;
-      progressBarFill.style.width = `${progress}%`;
-    });
+  video.addEventListener('timeupdate', () => {
+  const progress = (video.currentTime / video.duration) * 100;
+    progressBarFill.style.width = `${progress}%`;
   });
+});
 
 //---------------------------------------------------------------------------------
+// This following coding added a Comment submit event listener
+const submitCommentButton = document.getElementById('submit-comment');
+const commentList = document.getElementById('comment-list');
+const commentInput = document.getElementById('comment-input');
+
+submitCommentButton.addEventListener('click', () => {
+    const commentText = commentInput.value.trim();
+    if (commentText !== "") {
+        const commentElement = document.createElement('div');
+        commentElement.classList.add('comment');
+        commentElement.textContent = commentText;
+        commentList.appendChild(commentElement);
+        commentInput.value = ""; // Refreshing the website again will clear the input
+    }
+});

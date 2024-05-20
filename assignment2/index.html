@@ -16,79 +16,88 @@
       <h1 class="scrolling-text">Media Player Website</h1>
     </header>
 
-      <!-- Image Section -->
-      <section class="image-row">
-        <img src="南渡素材 (114).png" alt="Image 1" class="inline-image" />
-        <img src="南渡素材 (170).png" alt="Image 2" class="inline-image" />
-      </section>
-     <!-- heart beat section -->
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+    <!-- Image Section -->
+    <section class="image-row">
+      <img src="南渡素材 (114).png" alt="Image 1" class="inline-image" />
+      <img src="南渡素材 (170).png" alt="Image 2" class="inline-image" />
+    </section>
+    <!-- Heartbeat section -->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
     <!-- Main Content Section -->
-     <main class="container">
-      <!-- Media Player Section -->
-      <div class="media-player">
-        <video id="my-video">
-          <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"/>
-        </video>
-        <div class="custom-controls">
-        <!-- button sections -->
-          <button id="play-pause-btn" onclick="togglePlayPause()">
-            <img
-              id="play-pause-img"
-              src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-              alt="Play Button"
-              width="20"
-              height="20"/>
-          </button>
-          <button id="mute-unmute-button">
-            <img
-              id="mute-unmute-img"
-              src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
-              alt="Mute unmute Button"
-              width="20"
-              height="20"
-            />
-          <button id="decrease-volume-button">
-            <img
-              id="decrease-volume-img"
-              src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
-              alt="Decrease Button"
-              width="20"
-              height="20"/>
-          </button>
-          <button id="increase-volume-button">
-            <img
-              id="increase-volume-img"
-              src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
-              alt="Increase Button"
-              width="20"
-              height="20"/>
-          </button>
-          <div class="progress-bar">
-            <span id="progress-bar-fill"></span>
-          </div>
-          <button id="replay-button" onclick="replayVideo()">
-            <img id="replay-img" src="https://img.icons8.com/ios-glyphs/30/replay.png" alt="Replay Button" width="20" height="20" />
-          </button>
-        </div>
+    <main class="container">
+    <!-- Media Player Section -->
+    <div class="media-player">
+      <video id="my-video">
+        <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
+          type="video/mp4"/>
+      </video>
+      <div class="custom-controls">
+       <!-- button sections -->
+       <button id="play-pause-btn" onclick="togglePlayPause()">
+       <img
+         id="play-pause-img"
+         src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+         alt="Play Button"
+         width="20"
+         height="20"/>
+       </button>
+       <button id="mute-unmute-button">
+       <img
+         id="mute-unmute-img"
+         src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+         alt="Mute unmute Button"
+         width="20"
+         height="20"
+         />
+       <button id="decrease-volume-button">
+        <img
+         id="decrease-volume-img"
+         src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+         alt="Decrease Button"
+         width="20"
+         height="20"/>
+       </button>
+       <button id="increase-volume-button">
+       <img
+         id="increase-volume-img"
+         src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+         alt="Increase Button"
+         width="20"
+         height="20"/>
+       </button>
+       <!-- progress-bar -->
+       <div class="progress-bar">
+         <span id="progress-bar-fill"></span>
+       </div>
+       <button id="replay-button" onclick="replayVideo()">
+         <img id="replay-img" src="https://img.icons8.com/ios-glyphs/30/replay.png" alt="Replay Button" width="20" height="20" />
+       </button>
+      </div>
     </div>
-      <section>
-        <img src="南渡素材 (248).png" alt="Image 2" class="inline-image" />
-      </section>
-    </main>
 
+   <!-- Comment Section -->
+   <div class="comment-section">
+     <h2>Comments</h2>
+     <div class="comment-list" id="comment-list">
+       <!-- Comments will be inserted here dynamically -->
+     </div>
+     <div class="comment-form">
+       <textarea id="comment-input" placeholder="Do you love it? Add a comment..."></textarea>
+       <button id="submit-comment" class="button">Submit</button>
+     </div>
+   </div>
+   
     <!-- Footer Section -->
     <footer>
       <p>&copy; 2024 Media Player Website. All rights reserved.</p>

@@ -6,6 +6,13 @@
   --main-btn-bg-color: #938989;
 }
 
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 /* Scrolling text animation */
 @keyframes scroll-text {
     0% {
@@ -38,7 +45,7 @@
     display: block;
   }
 
-  /* heart beet section*/
+/* The Heartbeet section*/
 ul{
     position: relative;
     display: flex;
@@ -246,6 +253,56 @@ nav a {
   background-color: rgb(167, 119, 167);
   width: 0;
   transition: width 0.3s ease;
+}
+
+
+/* Comment Section */
+.comment-section {
+  margin-top: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.comment-section h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.comment-list {
+  border: 1px solid #cda2d1;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comment {
+  border-bottom: 1px solid #593364;
+  padding: 5px 0;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comment-form .button {
+  align-self: flex-end;
 }
 
 /* Footer styling */
