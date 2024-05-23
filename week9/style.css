@@ -45,7 +45,7 @@ button{
 button:hover {
     background-color: rgb(33,47,74);
     scale: 0.8;
-    rotate: 10deg;
+    /* rotate: 10deg; */
 }
 
 input {
@@ -166,4 +166,34 @@ input:hover {
     100%{
         rotate: 360deg;
     }
+}
+
+.heart-icon {
+    animation: heartbeat 2s linear infinite;
+}
+
+@keyframes heartbeat {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 0.7;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+#side-drawer{
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: lightpink;
+    top: 0;
+    left: -200px;
+    transition: translate 0.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
 }
