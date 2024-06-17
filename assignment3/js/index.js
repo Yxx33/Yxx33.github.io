@@ -43,7 +43,7 @@ $(function() {
 function ToTwo() {
 	var current = $("#index_second_box").offset().top;
 	console.log(current)
-	//页面滚动效果
+	//Page scrolling effect
 	$("body,html").stop().animate({
 		scrollTop: current,
 	});
@@ -52,7 +52,7 @@ function ToTwo() {
 function ViewPage() {
 	var current = $("#ViewPage-Main").offset().top;
 	console.log(current)
-	//页面滚动效果
+	//Page scrolling effect
 	$("body,html").stop().animate({
 		scrollTop: current,
 	});
@@ -61,7 +61,7 @@ function ViewPage() {
 function FoodPage() {
 	var current = $("#FoodPage-Main").offset().top;
 	console.log(current)
-	//页面滚动效果
+	//Page scrolling effect
 	$("body,html").stop().animate({
 		scrollTop: current,
 	});
